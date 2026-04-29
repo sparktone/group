@@ -442,4 +442,9 @@
 
 })(document.documentElement);
 
-document.getElementById("year").textContent = new Date().getFullYear();
+window.addEventListener('load', function () {
+    const yearEl = document.getElementById("year");
+    if (yearEl) {
+        yearEl.textContent = new Date().getFullYear();
+    }
+});
