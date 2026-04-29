@@ -4263,8 +4263,14 @@ img.u-pull-left {
         padding-bottom : var(--vspace-2);
     }
 
+    /* Fix: keep year inline, only break before "Design by" */
     .ss-copyright span {
-        display : block;
+        display: inline;
+    }
+
+    .ss-copyright span + span {
+        display: block;
+        margin-top: 0.5rem;
     }
 
     .ss-copyright span::after {
