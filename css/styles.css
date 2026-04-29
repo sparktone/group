@@ -4161,7 +4161,7 @@ img.u-pull-left {
 
 .ss-copyright span {
     font-size : var(--text-sm);
-    display   : inline-block;
+    display   : inline;
 }
 
 .ss-copyright span::after {
